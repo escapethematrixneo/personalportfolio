@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case Studies and projects | Saravanan.</title>
+  <link rel="icon" href="logo2.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="casestud.css">
+  <script src="casestud.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Add in <head> or before </body> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+  <!-- Add any other CSS or meta tags as needed -->
+<section class="page-fade">
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="about.html">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-center">
+    <span class="name">Saravanan.</span>
+  </div>
+  <div class="nav-right">
+    <button class="menu-toggle" id="menuToggle">Menu +</button>
+    <div class="dropdown-content" id="menuDropdown">
+      <a href="index.html">Home</a>
+      <a href="webser.html">Web Services</a>
+      <a href="casestud.html">Case Studies</a>
+    </div>
+  </div>
+</nav>
+
+
+
+<section class="case-study-section">
+  <div class="case-study-container">
+    <div class="case-left animate-zoom">
+      <span class="section-badge">🟠 How we work</span>
+      <h2 class="case-title animate-zoom">
+        Programs that tackle your <br>
+        strategic context, business <br>
+        goals and learner needs.
+      </h2>
+    </div>
+    <div class="case-right animate-zoom">
+      <p class="animate-zoom">🔸I don't believe in one-size-fits-all. I tailor every project to your unique business goals and audiance-whether you're a startup, creator, or entrepreneur.</p>
+      <p class="animate-zoom">🔸Together we'll build digital experiences that goes beyond looks and deliver real impact.</p>
+      <p class="animate-zoom">🔸Ready to bring your vision to life, Let's create something that feels like you-and connects with them.</p>
+    </div>
+  </div>
+</section>
+
+<section class="projects-section animate-zoom" style="animation-delay: 0s;">
+  <h2 class="projects-title">My Projects</h2>
+  <div class="projects-grid animate-zoom">
+    <a href="https://escapethematrixneo.github.io/gitcloud/" target="_blank" class="project-card">
+      <img src="project1.png" alt="Project 1" />
+      <div class="project-info animate-zoom">
+        <h3>Cloud Management</h3>
+        <p>A full-stack web application for managing cloud resources, user accounts, and deployment logs in real time</p>
+      </div>
+    </a>
+
+    <a href="https://shavansportfolio1.netlify.app" target="_blank" class="project-card">
+      <img src="project2.png" alt="Project 2" />
+      <div class="project-info animate-zoom">
+        <h3>Personal portfolio</h3>
+        <p>A personal website showcasing my skills, services, and projects — built with HTML, CSS, and JavaScript, React, Bootstrap, UI/UX.</p>
+      </div>
+    </a>
+
+        <a href=" https://escapethematrixneo.github.io/gitprojecys3/" target="_blank" class="project-card">
+      <img src="project3.png" alt="Project 2" />
+      <div class="project-info animate-zoom">
+        <h3>CSS interesting styles</h3>
+        <p>Interesting CSS styles and cool animations done by CSS only</p>
+      </div>
+    </a>
+
+     <a href="index.html" target="_blank" class="project-card">
+      <img src="project4.png" alt="Project 2" />
+      <div class="project-info animate-zoom">
+        <h3>Premium Websites</h3>
+        <p>This is my main portfolio has all details about me, my work, my projects, my skills, my contact. This site has built by various languages and frameworks</p>
+      </div>
+    </a>
+
+    <!-- Add more project cards as needed -->
+  </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Projects</title>
+  <style>
+    body {
+      font-family: 'Instrument Serif', serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    .project-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .project-section h2 {
+      font-size: 40px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .project-section p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+      max-width: 700px;
+    }
+
+    .filter-buttons {
+      margin-bottom: 40px;
+    }
+
+    .filter-buttons button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: none;
+      background: #cfd6cb;
+      color: black;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .filter-buttons button.active {
+      background: #cfd6cb;
+    }
+
+    .filter-buttons button:hover {
+  background: #f8f589;
+  transform: scale(1.05);
+}
+
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  flex: 1 1 calc(33.33% - 20px);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 460px; /* ✅ Ensures height */
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-info h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .project-info p {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .project-info span {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .view-details-btn {
+      margin-top: auto;
+      padding: 10px 16px;
+      background: #cfd6cb;
+      color: black;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 20px;
+      align-self: flex-start;
+}
+
+.view-details-btn:hover {
+  background: #f8f589;
+}
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    .modal-content {
+      background: #fff;
+      margin: 10% auto;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 500px;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #888;
+    }
+
+    .modal a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .project-card {
+        flex: 1 1 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+  .project-card {
+    flex: 1 1 100%;
+    min-height: 400px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  /* existing styles */
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0; /* needed for animation to work */
+}
+
+
+  </style>
+</head>
+<body>
+
+<section class="project-section">
+  <h2>My Projects</h2>
+  <p>Explore my development work from frontend creativity to backend logic and premium full-stack solutions.</p>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="frontend">Frontend</button>
+    <button class="filter-btn" data-filter="backend">Backend</button>
+    <button class="filter-btn" data-filter="premium">Premium</button>
+  </div>
+
+  <div class="project-grid">
+    <!-- Frontend Project -->
+    <div class="project-card frontend  animate-zoom" style="animation-delay: 0s;">
+      <img src="project2.png" alt="Cloud UI">
+      <div class="project-info">
+        <h3>My personal portfolio</h3>
+        <p>Frontend-only dashboard with animated UI.</p>
+        <span>HTML, CSS, JavaScript, GSAP</span>
+        <button class="view-details-btn"
+          data-title="Sample Cloud Management UI"
+          data-description="A responsive cloud dashboard built using HTML, CSS, JavaScript and GSAP. Designed to be lightweight, fast, and mobile-friendly."
+          data-tech="HTML, CSS, JavaScript, GSAP"
+          data-link="https://shavansportfolio1.netlify.app">
+          View Details
+        </button>
+      </div>
+    </div>
+
+    <!-- Backend Project -->
+    <div class="project-card backend  animate-zoom" style="animation-delay: 0s;">
+      <img src="project1.png" alt="Auth API">
+      <div class="project-info">
+        <h3>Cloud Management</h3>
+        <p>Basic Cloud management project of how it works.</p>
+        <span>Java, Spring Boot, MongoDB</span>
+        <button class="view-details-btn"
+          data-title="Authentication API"
+          data-description="Backend API built using Java, Spring Boot, and MongoDB for authentication and user management."
+          data-tech="Java, Spring Boot, MongoDB"
+          data-link="https://escapethematrixneo.github.io/gitcloud/">
+          View Details
+        </button>
+      </div>
+    </div>
+
+    <!-- Premium Project -->
+    <div class="project-card premium  animate-zoom" style="animation-delay: 0s;">
+      <img src="project4.png" alt="E-Commerce App">
+      <div class="project-info">
+        <h3>Business Platform</h3>
+        <p>Full-stack project with UI/UX, frontend & backend.</p>
+        <span>HTML, CSS, JavaScript,Java, GSAP,Bootstrap, Tailwind, Spring Boot, MySQL, MongoDB, UI/UX</span>
+        <button class="view-details-btn"
+          data-title="Personal portfolio"
+          data-description="A premium portfolio platform built with full-stack technologies and a sleek UI/UX experience."
+          data-tech="HTML, CSS, JavaScript,Java, GSAP,Bootstrap, Tailwind, Spring Boot, MySQL, MongoDB, UI/UX"
+          data-link="index.html">
+          View Details
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- Modal Structure -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+    <p><strong>Technologies:</strong> <span id="modalTech"></span></p>
+    <a href="#" id="modalLink" target="_blank">Visit Project</a>
+  </div>
+</div>
+
+<script>
+
+
+  // Modal logic
+  const modal = document.getElementById('projectModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDescription = document.getElementById('modalDescription');
+  const modalTech = document.getElementById('modalTech');
+  const modalLink = document.getElementById('modalLink');
+  const closeBtn = document.querySelector('.close-btn');
+
+  document.querySelectorAll('.view-details-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      modalTitle.textContent = btn.dataset.title;
+      modalDescription.textContent = btn.dataset.description;
+      modalTech.textContent = btn.dataset.tech;
+      modalLink.href = btn.dataset.link;
+      modal.style.display = 'block';
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', e => {
+    if (e.target == modal) modal.style.display = 'none';
+  });
+</script>
+
+
+
+
+
+
+    <!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <div class="contact-header">
+    <h2>Let’s work together to lift your content<br>and inspire your people.</h2>
+    <p>Please get in touch.<br>
+      Send us a message here, <a href="mailto:bsaravanan2511@gmail.com">email</a> or <a href="tel:+916381568894">call us</a>.
+    </p>
+  </div>
+
+  <!-- ✅ Corrected Form -->
+  <form class="contact-form" id="contact-form" action="https://formsubmit.co/bsaravanan2511@gmail.com" method="POST">
+
+    <div class="form-group half">
+      <label for="firstName">First name</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Saravanan" required>
+    </div>
+
+    <div class="form-group half">
+      <label for="lastName">Last name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="B" required>
+    </div>
+
+    <div class="form-group full">
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+    </div>
+
+    <div class="form-group full">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell us briefly about your project..." required></textarea>
+    </div>
+
+    <div class="form-group checkbox">
+      <input type="checkbox" id="privacy">
+      <label for="privacy">I have read and agree to the <a href="#">Privacy Policy</a></label>
+    </div>
+
+    <!-- ✅ Hidden fields for Formsubmit -->
+    <input type="hidden" name="_next" value="https://yourdomain.com/contact.html?success=true">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit" class="send-btn">Send <span>&rarr;</span></button>
+  </form>
+</section>
+
+  <!-- Footer -->
+  <footer style="background-color: #f8f589; font-family: 'Instrument Serif', serif; padding: 4rem 2rem; color: #222;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem;">
+      <div style="flex: 1 1 55%; max-width: 600px; font-size: 1.4rem; line-height: 1.6;">
+        <p>
+          As a creator based in India, I respectfully honor the Traditional Custodians of this land and their Elders — past, present, and future. I recognize their deep connection to land, culture, and community.
+        </p>
+      </div>
+      <div style="flex: 1 1 35%; max-width: 300px; font-size: 1rem; line-height: 2;">
+        <p><a href="mailto:bsaravanan2511@gmail.com" style="color: #222; text-decoration: none;">official@bsaravanan</a></p>
+        <p>+91 63815 68894</p>
+        <p>West Tambaram, Chennai<br>TamilNadu, India</p>
+        <p>Connect with me
+          <a href="#" style="display: inline-block; margin-left: 0.5rem;"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="height: 24px;"></a>
+        </p>
+      </div>
+    </div>
+    <hr style="margin: 3rem 0; border: none; border-top: 1px solid #222;">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; font-size: 1rem;">
+      <div style="display: flex; gap: 1.5rem;">
+        <a href="#" style="color: #222; text-decoration: none;">Privacy Statement</a>
+        <a href="#" style="color: #222; text-decoration: none;">Cookie Policy</a>
+        <a href="#" style="color: #222; text-decoration: none;">Disclaimer</a>
+      </div>
+      <div style="margin-top: 1rem; font-size: 1rem">
+        &copy; 2025 Saravanan B
+      </div>
+      <div style="margin-top: 1rem;">
+        Created by <strong style="font-family: 'Times New Roman', serif;">Saravanan.</strong>
+      </div>
+    </div>
+  </footer>
+<script>
+    // Custom Cursor Animation
+    const cursor = document.getElementById('cursor');
+    let mouseX = 0, mouseY = 0;
+    let posX = 0, posY = 0;
+
+    window.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animateCursor() {
+      posX += (mouseX - posX) * 0.15;
+      posY += (mouseY - posY) * 0.15;
+      cursor.style.left = posX + 'px';
+      cursor.style.top = posY + 'px';
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('active'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+    });
+  </script>
+<script>
+// Menu toggle for dropdown
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.getElementById('menuToggle');
+  const menuDropdown = document.getElementById('menuDropdown');
+  if (menuToggle && menuDropdown) {
+    menuToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      menuDropdown.classList.toggle('show');
+    });
+    // Optional: Hide dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!menuDropdown.contains(e.target) && e.target !== menuToggle) {
+        menuDropdown.classList.remove('show');
+      }
+    });
+  }
+});
+</script>
+
+<script>
+  window.addEventListener("load", function () {
+    document.body.classList.add("loaded");
+  });
+</script>
+<script>
+  document.querySelectorAll('a[href]').forEach(link => {
+    // Ignore external or target blank links
+    if (link.hostname === window.location.hostname && !link.target) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        document.body.classList.remove('loaded');
+        setTimeout(() => {
+          window.location.href = href;
+        }, 400); // match your fade-out time
+      });
+    }
+  });
+</script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".animate-zoom").forEach((element, i) => {
+    gsap.from(element, {
+      scrollTrigger: {
+        trigger: element,
+        start: "top 90%",
+        toggleActions: "play none none reverse",
+      },
+      opacity: 0,
+      scale: 0.95,
+      y: 40,
+      duration: 1,
+      ease: "power2.out",
+      delay: i * 0.05
+    });
+  });
+</script>
+
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove 'active' from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const filter = button.getAttribute('data-filter');
+
+      projectCards.forEach(card => {
+        if (filter === 'all' || card.classList.contains(filter)) {
+          card.style.display = 'flex'; // Show matching cards
+        } else {
+          card.style.display = 'none'; // Hide non-matching cards
+        }
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saravanan. | Passionate Developer</title>
+  <link rel="icon" href="logo2.jpg" type="image/x-icon" />
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("SARAVANAN"); // Replace with your EmailJS user ID
+  })();
+</script>
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    emailjs.sendForm("service_j84om7l", this)
+      .then(() => alert("Message sent successfully!"))
+      .catch(err => alert("Failed to send message: " + err));
+  });
+</script>
+
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="scroll-watcher"></div>
+
+  <!-- GSAP Core -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+<!-- ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+<!-- ScrollSmoother (for fluid scroll feel) -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollSmoother.min.js"></script>
+
+<script>
+  gsap.registerPlugin(ScrollSmoother);
+ScrollSmoother.create({
+  wrapper: "#smooth-wrapper",
+  content: "#smooth-content",
+  smooth: 1.5,
+  effects: true
+});
+
+
+  // Reveal animation for elements with .reveal class
+  gsap.utils.toArray(".reveal").forEach((elem) => {
+    gsap.from(elem, {
+      scrollTrigger: {
+        trigger: elem,
+        start: "top 85%",
+        toggleActions: "play none none none",
+      },
+      opacity: 0,
+      y: 50,
+      duration: 1.2,
+      ease: "power3.out",
+      stagger: 0.15
+    });
+  });
+</script>
+</body>
+</html>
+
+  <!-- Background Video -->
+   <section class="video-bg">
+    <div class="video-overlay"></div>
+  <video class="video-bg" autoplay muted loop playsinline>
+    <source src="backgroungimg3.mp4" type="video/mp4">
+  </video>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <nav class="navbar hide">
+  <!-- ...navbar content... -->
+</nav>
+    <div class="nav-left">
+      <a href="about.html">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-center">
+      <span class="name">Saravanan.</span>
+    </div>
+
+    <div class="nav-right">
+      <button class="menu-toggle" id="menuToggle">Menu +</button>
+      <div class="dropdown-content" id="menuDropdown">
+        <a href="index.html">Home</a>
+        <a href="webser.html">Web Services</a>
+        <a href="casestud.html">Case Studies</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Morph Text Centered -->
+  <div class="center-morph">
+    <div class="morph-container" id="morph-text"></div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+
+  <section class="showcase">
+    <div class="container grid">
+      <div class="showcase-img animate-zoom">
+        <img src="projimg2.jpg" alt="">
+      </div>
+      <div class="showcase-text">
+        <h1><pre>
+Websites that work and Speak
+your Message and inspire your
+people.
+        </pre>
+        </h1>
+        <p>
+🔸I don’t just build websites — I craft narratives. From clean, responsive web<br>
+development to compelling YouTube scripts and organic storylines, I help creators<br>
+and businesses express their message with clarity and impact.
+</p>
+         <p>
+🔸I've worked with content creators, startups, and solo entrepreneurs to design <br>
+  website and to write scripts that truly connect with audiences</p>
+        <p>
+🔸My approach blends with clean code with creative thinking, storytelling with<br>
+  strategy.As a result websites that speak with purpose and content that resonate
+        </p>
+        <p>
+    Let's build something that feel's like you and works like a charm
+        </p>
+        <button class="talk-btn">Talk to us &rarr;</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="icons">
+      <div class="icons-slide">
+        <img src="icons/css-3.png" alt="">
+        <img src="icons/html (2).png" alt="">
+        <img src="icons/java.png" alt="">
+        <img src="icons/js (1).png" alt="">
+        <img src="icons/mongodb.png" alt="">
+        <img src="icons/react (1).png" alt="">
+        <img src="icons/springboot.png" alt="">
+        <img src="icons/sql.png" alt="">
+        <img src="icons/vscode.jpeg" alt="">
+        <img src="icons/web-design.png" alt="">
+      </div>
+      <div class="icons-slide">
+        <img src="icons/css-3.png" alt="">
+        <img src="icons/html (2).png" alt="">
+        <img src="icons/java.png" alt="">
+        <img src="icons/js (1).png" alt="">
+        <img src="icons/mongodb.png" alt="">
+        <img src="icons/react (1).png" alt="">
+        <img src="icons/springboot.png" alt="">
+        <img src="icons/sql.png" alt="">
+        <img src="icons/vscode.jpeg" alt="">
+        <img src="icons/web-design.png" alt="">
+      <!-- repeat the same images here for seamless loop -->
+    </div>
+ </div>
+ <script>
+  gsap.from(".icon", {
+    scrollTrigger: ".icon",
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    ease: "power2.out"
+  });
+</script>
+
+  </section>
+
+<section class="review">
+<div class="review-flex">
+  <div class="review-left">
+    <h1><span class="dot"></span> Review your content</h1>
+  </div>
+  <div class="review-right">
+    <h2>Refine your Message, Elevate your Presence</h2>
+    <p><span class="bullet">◆</span> Crafting a strong online presence is a delicate balance — especially when your ideas are complex and your audience diverse. That's where I come in.</p>
+    <p><span class="bullet">◆</span> Whether it's building a clean, responsive website or editing your message for clarity and impact, I help turn raw ideas into clear, engaging digital content.</p>
+    <p><span class="bullet">◆</span> From personal portfolios to creator-driven scripts and client-facing pages, I focus on structure, clean code, storytelling, and audience psychology — ensuring your content connects the right way, with the right people.</p>
+    <p><b>Let's make every word — and every pixel — count.</b></p>
+  </div>
+ <a href="webser.html" class="web-btn">Explore Web Services &rarr;</a>
+
+</div>
+
+</section>
+<script>
+  // Register the ScrollTrigger plugin
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate each paragraph in .review-right
+  gsap.utils.toArray(".review-right p").forEach((para, i) => {
+    gsap.from(para, {
+      scrollTrigger: {
+        trigger: para,
+        start: "top 80%", // when paragraph enters viewport
+        toggleActions: "play none none reverse",
+      },
+      opacity: 0,
+      y: 30,
+      duration: 0.8,
+      ease: "power3.out",
+      delay: i * 0.1 // slight stagger
+    });
+  });
+</script>
+        <section class="img animate-zoom">
+          <div class="projimg animate-zoom">
+            <img src="projimg3.jpg" alt="">
+          </div>
+         </section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-header">
+    <h2>Let’s work together to lift your content<br>and inspire your people.</h2>
+    <p>Please get in touch.<br>
+      Send us a message here, <a href="mailto:bsaravanan2511@gmail.com">email</a> or <a href="tel:91+6381568894">call us</a>.
+    </p>
+  </div>
+
+  <form class="contact-form">
+    <form class ="contact-form" id="contact-form">
+    <div class="form-group half">
+      <label for="firstName">First name</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Saravanan" required>
+    </div>
+
+    <div class="form-group half">
+      <label for="lastName">Last name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="B" required>
+    </div>
+
+    <div class="form-group full">
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" placeholder="bsaravanan2511@gmail.com" required>
+    </div>
+
+    <div class="form-group full">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell us briefly about your project..." required></textarea>
+    </div>
+
+    <div class="form-group checkbox">
+      <input type="checkbox" id="privacy" required>
+      <label for="privacy">I have read and agree to the <a href="#">Privacy Policy</a></label>
+    </div>
+
+    <button type="submit" class="send-btn">Send <span>&rarr;</span></button>
+  </form>
+  </form>
+
+  <!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray("form input, form textarea, form button").forEach((el, i) => {
+    gsap.from(el, {
+      opacity: 0,
+      y: 30,
+      duration: 0.8,
+      delay: i * 0.1,
+      scrollTrigger: {
+        trigger: el,
+        start: "top 90%",
+      },
+    });
+  });
+</script>
+
+</section>
+
+<footer style="background-color: #f8f589; font-family: 'Instrument Serif', serif; padding: 4rem 2rem; color: #222;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem;">
+    <div style="flex: 1 1 55%; max-width: 600px; font-size: 1.4rem; line-height: 1.6;">
+      <p>
+        As a creator based in India, I respectfully honor the Traditional Custodians of this land and their Elders — past, present, and future. I recognize their deep connection to land, culture, and community.
+      </p>
+    </div>
+    <div style="flex: 1 1 35%; max-width: 300px; font-size: 1rem; line-height: 2;">
+      <p><a href="mailto:bsaravanan2511@gmail.com" style="color: #222; text-decoration: none;">official@bsaravanan</a></p>
+      <p>+91 63815 68894</p>
+      <p>West Tambaram, Chennai<br>TamilNadu, India</p>
+      <p>Connect with me
+        <a href="#" style="display: inline-block; margin-left: 0.5rem;"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="height: 24px;"></a>
+      </p>
+    </div>
+  </div>
+
+  <hr style="margin: 3rem 0; border: none; border-top: 1px solid #222;">
+
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; font-size: 1rem;">
+    <div style="display: flex; gap: 1.5rem;">
+      <a href="#" style="color: #222; text-decoration: none;">Privacy Statement</a>
+      <a href="#" style="color: #222; text-decoration: none;">Cookie Policy</a>
+      <a href="#" style="color: #222; text-decoration: none;">Disclaimer</a>
+    </div>
+    <div style="margin-top: 1rem; font-size: 1rem" >
+      &copy; 2025 Saravanan B
+    </div>
+    <div style="margin-top: 1rem;">
+      Created by <strong style="font-family: 'Times New Roman', serif;">Saravanan.</strong>
+    </div>
+  </div>
+</footer>
+
+<body>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <!-- Your entire website content here -->
+    </div>
+  </div>
+</body>
+
+
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate each tech stack icon with smooth stagger
+  gsap.from(".icons-slide img", {
+    scrollTrigger: {
+      trigger: ".icons-slide",
+      start: "top 90%",
+      toggleActions: "play none none none",
+    },
+    opacity: 0,
+    y: 50,
+    ease: "expo.out",
+    duration: 2,
+    stagger: 0.15
+  });
+
+  // Project image scroll animation
+  gsap.from(".projimg img", {
+    scrollTrigger: {
+      trigger: ".projimg",
+      start: "top 90%",
+      toggleActions: "play none none none",
+    },
+    opacity: 0,
+    scale: 0.9,
+    ease: "expo.out",
+    duration: 2
+  });
+
+  // Project heading and text
+  gsap.from(".showcase-text", {
+    scrollTrigger: {
+      trigger: ".showcase-text",
+      start: "top 90%",
+      toggleActions: "play none none none",
+    },
+    opacity: 0,
+    y: 40,
+    ease: "expo.out",
+    duration: 2
+  });
+
+  // Review lines with smooth stagger
+  gsap.from(".review-right p", {
+    scrollTrigger: {
+      trigger: ".review-right",
+      start: "top 90%",
+      toggleActions: "play none none none",
+    },
+    opacity: 0,
+    y: 40,
+    ease: "expo.out",
+    duration: 2,
+    stagger: 0.3
+  });
+
+  // Contact form fields
+  gsap.from("form input, form textarea, form button", {
+    scrollTrigger: {
+      trigger: ".contact-form",
+      start: "top 90%",
+      toggleActions: "play none none none",
+    },
+    opacity: 0,
+    y: 40,
+    ease: "expo.out",
+    duration: 2,
+    stagger: 0.2
+  });
+</script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".animate-zoom").forEach((element, i) => {
+    gsap.from(element, {
+      scrollTrigger: {
+        trigger: element,
+        start: "top 110%",
+        toggleActions: "play none none reverse",
+      },
+      opacity: 0,
+      scale: 0.95,
+      y: 50,
+      duration: 1,
+      ease: "power2.out",
+      delay: i * 0.05
+    });
+  });
+</script>
+
+
+</body>
+</html>
