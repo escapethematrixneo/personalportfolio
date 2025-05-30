@@ -406,20 +406,4 @@ and businesses express their message with clarity and impact.
     stagger: 0.2
   });
 
-  // Animate .animate-zoom elements
-  gsap.utils.toArray(".animate-zoom").forEach((element, i) => {
-    gsap.from(element, {
-      scrollTrigger: {
-        trigger: element,
-        start: "top 110%",
-        toggleActions: "play none none reverse",
-      },
-      opacity: 0,
-      scale: 0.95,
-      y: 50,
-      duration: 1,
-      ease: "power2.out",
-      delay: i * 0.05
-    });
-  });
-</script>
+
